@@ -13,6 +13,7 @@ namespace HalgarisRPGLoot
 
         public static T RandomItem<T>(this T[] itms)
         {
+            //return itms[Random.Next(0, (itms.Length-1 <= 0 )? 1 : itms.Length-1)];
             return itms[Random.Next(0, itms.Length)];
         }
 
